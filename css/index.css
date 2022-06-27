@@ -1,0 +1,98 @@
+:root {
+    --blue: #205375;
+    --white: #fff;
+    --orange: #F66B0E;
+}
+body {
+    background: var(--blue);
+    font-family: sans-serif;
+}
+
+.login {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 30px;
+    background: var(--white);
+}
+
+h2 {
+    color: var(--blue);
+    font-size: 30px;
+    border-bottom: 7px solid var(--orange);
+    border-radius: 5px;
+}
+
+.text {
+    width: 100%;
+    overflow: hidden;
+    font-size: 15px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid var(--blue);
+}
+
+.i {
+    width: 26px;
+    float: left;
+    text-align: center;
+}
+
+.text input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--blue);
+    font-size: 20px;
+    width: 80%;
+    float: left;
+    margin: 0 10px;
+}
+
+.btn {
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid var(--orange);
+    color: var(--blue);
+    padding: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.btn:hover {
+    background-color: var(--blue);
+    color: var(--orange);
+    transition: .5s;
+}
+
+.btn:active {
+    background-color: var(--blue);
+    color: var(--orange);
+}
+
+h1 {
+    color: var(--white);
+    text-align: center;
+    margin: auto;
+    padding: auto;
+}
+
+/* Smartphones (600px para baixo) */
+@media  (max-width: 476px) {
+    .login {
+        width: 50%;
+        display: block;
+    }
+}
+
+@media  (max-width: 177px) {
+    .login {
+        width: 50%;
+        display: block;
+    }
+}
